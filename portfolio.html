@@ -14,111 +14,138 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a class="logo" lang="en" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
-            <ul>
-                <li>
-                    <a class="nav-link" href="./index.html">Студия</a>
-                </li>
-                <li>
-                    <a class="nav-link current" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <address>
-            <ul>
-                <li><a class="nav-link address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="nav-link address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="container">
+            <nav>
+                <a class="logo" lang="en" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
+                <ul class="nav-list list">
+                    <li class="nav-list-item">
+                        <a class="nav-link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-link current" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <address>
+                <ul class="address-list list">
+                    <li class="address-list-item"><a class="nav-link address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="address-list-item"><a class="nav-link address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
+        
     </header>
     <main>
         <h1 class="visually-hidden">Наши работы</h1>
-        <section>
-            <ul>
-                <li>
-                    <button class="gallery-button" type="button">Все</button>
-                </li>
-                <li>
-                    <button class="gallery-button" type="button">Веб-сайты</button>
-                </li>
-                <li>
-                    <button class="gallery-button" type="button">Приложения</button>
-                </li>
-                <li>
-                    <button class="gallery-button" type="button">Дизайн</button>
-                </li>
-                <li>
-                    <button class="gallery-button" type="button">Маркетинг</button>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <img src="./images/our-projects/website-technocrack.jpg" alt="Внешний вид сайта на мониторе ноутбука" width="370">
-                    <h2 class="gallery-title">Технокряк</h2>
-                    <p class="gallery-description">Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./images/our-projects/design-poster.jpg" alt="Постер с двумя баскетболистами" width="370">
-                    <h2 class="gallery-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                    <p class="gallery-description">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/our-projects/app-seafood.jpg" alt="Логотип ресторана" width="370">
-                    <h2 class="gallery-title">Ресторан <span lang="en">Seafood</span></h2>
-                    <p class="gallery-description">Приложение</p>
-                </li>
-                <li>
-                    <img src="./images/our-projects/marketing-project-prime.jpg" alt="Наушники" width="370">
-                    <h2 class="gallery-title">Проект <span lang="en">Prime</span></h2>
-                    <p class="gallery-description">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/our-projects/app-boxes.jpg" alt="Логотип приложения" width="370">
-                    <h2 class="gallery-title">Проект <span lang="en">Boxes</span></h2>
-                    <p class="gallery-description">Приложение</p>
-                </li>
-                <li>
-                    <img src="./images/our-projects/website-inspiration.jpg" alt="Внешний вид сайта на мониторе" width="370">
-                    <h2 class="gallery-title" lang="en">Inspiration has no Borders</h2>
-                    <p class="gallery-description">Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./images/our-projects/design-le.jpg" alt="Разворот журнала" width="370">
-                    <h2 class="gallery-title">Издание <span lang="en">Limited Edition</span></h2>
-                    <p class="gallery-description">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/our-projects/marketing-project-lab.jpg" alt="Бирка с названием проекта" width="370">
-                    <h2 class="gallery-title">Проект <span lang="en">LAB</span></h2>
-                    <p class="gallery-description">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/our-projects/app-growing-business.jpg" alt="Логотип приложения" width="370">
-                    <h2 class="gallery-title" lang="en">Growing Business</h2>
-                    <p class="gallery-description">Приложение</p>
-                </li>
-            </ul>
+        <section class="gallery">
+            <div class="container">
+                <ul class="buttons-list">
+                    <li class="buttons-list-item">
+                        <button class="gallery-button" type="button">Все</button>
+                    </li>
+                    <li class="buttons-list-item">
+                        <button class="gallery-button" type="button">Веб-сайты</button>
+                    </li>
+                    <li class="buttons-list-item">
+                        <button class="gallery-button" type="button">Приложения</button>
+                    </li>
+                    <li class="buttons-list-item">
+                        <button class="gallery-button" type="button">Дизайн</button>
+                    </li>
+                    <li class="buttons-list-item">
+                        <button class="gallery-button" type="button">Маркетинг</button>
+                    </li>
+                </ul>
+                <ul class="gallery-list">
+                    <li class="gallery-list-item">
+                        <img src="./images/our-projects/website-technocrack.jpg" alt="Внешний вид сайта на мониторе ноутбука"
+                            width="370">
+                            <div class="gallery-card-description">
+                                <h2 class="gallery-title">Технокряк</h2>
+                                <p class="gallery-description">Веб-сайт</p>
+                            </div>
+                    </li>
+                    <li class="gallery-list-item">
+                        <img src="./images/our-projects/design-poster.jpg" alt="Постер с двумя баскетболистами" width="370">
+                        <div class="gallery-card-description">
+                            <h2 class="gallery-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                            <p class="gallery-description">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="gallery-list-item">
+                        <img src="./images/our-projects/app-seafood.jpg" alt="Логотип ресторана" width="370">
+                        <div class="gallery-card-description">
+                            <h2 class="gallery-title">Ресторан <span lang="en">Seafood</span></h2>
+                            <p class="gallery-description">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="gallery-list-item">
+                        <img src="./images/our-projects/marketing-project-prime.jpg" alt="Наушники" width="370">
+                        <div class="gallery-card-description">
+                            <h2 class="gallery-title">Проект <span lang="en">Prime</span></h2>
+                            <p class="gallery-description">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="gallery-list-item">
+                        <img src="./images/our-projects/app-boxes.jpg" alt="Логотип приложения" width="370">
+                        <div class="gallery-card-description">
+                            <h2 class="gallery-title">Проект <span lang="en">Boxes</span></h2>
+                            <p class="gallery-description">Приложение</p>
+                        </div>
+                    </li>
+                    <li class="gallery-list-item">
+                        <img src="./images/our-projects/website-inspiration.jpg" alt="Внешний вид сайта на мониторе" width="370">
+                        <div class="gallery-card-description">
+                            <h2 class="gallery-title" lang="en">Inspiration has no Borders</h2>
+                            <p class="gallery-description">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="gallery-list-item">
+                        <img src="./images/our-projects/design-le.jpg" alt="Разворот журнала" width="370">
+                        <div class="gallery-card-description">
+                            <h2 class="gallery-title">Издание <span lang="en">Limited Edition</span></h2>
+                            <p class="gallery-description">Дизайн</p>
+                        </div>
+                    </li>
+                    <li class="gallery-list-item">
+                        <img src="./images/our-projects/marketing-project-lab.jpg" alt="Бирка с названием проекта" width="370">
+                        <div class="gallery-card-description">
+                            <h2 class="gallery-title">Проект <span lang="en">LAB</span></h2>
+                            <p class="gallery-description">Маркетинг</p>
+                        </div>
+                    </li>
+                    <li class="gallery-list-item">
+                        <img src="./images/our-projects/app-growing-business.jpg" alt="Логотип приложения" width="370">
+                        <div class="gallery-card-description">
+                            <h2 class="gallery-title" lang="en">Growing Business</h2>
+                            <p class="gallery-description">Приложение</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer class="footer">
-        <a class="logo footer-logo" lang="en" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
-        <address>
-            <ul>
-                <li>
-                    <a class="adress" target="_blank" href="https://goo.gl/maps/vDdAabAvZwRys1mK9">г. Киев, пр-т Леси Украинки, 26</a>
-                </li>
-                <li>
-                    <a class="footer-link" href="mailto:info@example.com">info@example.com</a>
-                </li>
-                <li>
-                    <a class="footer-link" href="tel:+380991111111">+38 099 111 11 11</a>
-                </li>
-            </ul>
-        </address>
+        <div class="container">
+            <a class="logo footer-logo" lang="en" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
+            <address>
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a class="adress" target="_blank" href="https://goo.gl/maps/vDdAabAvZwRys1mK9">г. Киев, пр-т Леси Украинки,
+                            26</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a class="footer-link" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a class="footer-link" href="tel:+380991111111">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
 </html>

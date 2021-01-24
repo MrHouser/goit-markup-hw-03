@@ -23,6 +23,7 @@ h4,
 h5,
 h6,
 ul,
+ol,
 p {
   margin: 0;
   padding: 0;
@@ -31,26 +32,20 @@ a {
   text-decoration: none;
 }
 
-ul {
-  list-style-type: none;
-}
-.container {
-  width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.bg2 {
-  background-color: tomato;
-}
-.bg {
-  background-color: teal;
+ul,
+ol {
+  list-style: none;
 }
 
-.button {
-  border: 1px solid #000000;
-  border-radius: 4px;
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .list {
@@ -80,7 +75,7 @@ nav {
 header > .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -116,17 +111,24 @@ header > .container {
   color: var(--accent-color);
 }
 
+header address {
+  margin-left: auto;
+}
+
+.address-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-link.address-link {
   font-style: normal;
   color: var(--main-color);
 }
 
-.address-list-item:last-child {
-  margin-left: 50px;
-}
-
 /* hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: var(--dark-background-color);
   text-align: center;
 }
@@ -143,6 +145,12 @@ header > .container {
 }
 
 .hero-button {
+  min-width: 200px;
+  min-height: 50px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 9px 30px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -171,12 +179,12 @@ header > .container {
   overflow: hidden;
 }
 
-.advantages-list {
-  justify-content: space-between;
-}
-
 .advantages-list-item {
   max-width: 270px;
+}
+
+.advantages-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .advantages-title {
@@ -209,7 +217,11 @@ header > .container {
 }
 
 .work-list {
-  justify-content: space-between;
+  margin: -15px;
+}
+
+.work-list-item {
+  margin: 15px;
 }
 
 /* our team */
@@ -230,17 +242,22 @@ header > .container {
 }
 
 .team-list {
-  justify-content: space-between;
+  margin: -15px;
 }
 
 .team-list-item {
-  padding-bottom: 30px;
+  margin: 15px;
 
   background-color: var(--main-white-color);
 }
 
+.card-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .employee-name {
-  margin-top: 30px;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -249,8 +266,6 @@ header > .container {
 }
 
 .employee-position {
-  margin-top: 10px;
-
   font-weight: 400;
   font-size: 16px;
   line-height: 1.188;
@@ -294,8 +309,23 @@ header > .container {
 /* ====portfolio==== */
 
 /* buttons */
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 46px;
+}
+
+.buttons-list-item:not(:last-child) {
+  margin-right: 8px;
+}
 
 .gallery-button {
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -310,6 +340,30 @@ header > .container {
 }
 
 /* gallery */
+
+.gallery {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.gallery-list-item {
+  max-width: 370px;
+  margin: 15px;
+  border: 1px solid #eeeeee;
+}
+
+.gallery-card-description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+}
+
 .gallery-title {
   font-weight: 700;
   font-size: 18px;
