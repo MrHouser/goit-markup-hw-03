@@ -163,7 +163,7 @@ header address {
 
 .about-us {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 47px;
 }
 
 /* our advantages */
@@ -205,8 +205,12 @@ header address {
 
 /* what we do */
 
+.about-us.what-we-do {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
 .work-title {
-  margin-top: 94px;
   margin-bottom: 50px;
 
   font-weight: 700;
@@ -307,6 +311,10 @@ header address {
 }
 
 /* ====portfolio==== */
+
+.portfolio-header {
+  border-bottom: 1px solid #ececec;
+}
 
 /* buttons */
 .buttons-list {
